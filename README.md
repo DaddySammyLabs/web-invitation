@@ -1,8 +1,28 @@
-# Business Card
+# Wedding Invitation Website 💍
 
-A responsive e-commerce application built with React and JavaScript.
+A modern and elegant wedding invitation website built with React. The application provides a beautiful digital invitation where guests can explore wedding details, view the event schedule, find the venue, and confirm their attendance.
 
-A multilingual Business Card website featuring a photo gallery, interactive navigation, video content, and an RSVP form where guests can confirm their attendance and leave wishes. Guest responses and messages are submitted to the server.
+## Features
+
+Elegant and responsive design
+Wedding details, date, and venue information
+Event schedule and timeline
+Photo gallery for the couple
+RSVP form for guest confirmations
+Interactive map and venue directions
+Mobile-friendly layout
+Tech Stack
+React
+JavaScript
+HTML5
+CSS3
+Getting Started
+
+Clone the repository, install dependencies, and run the development server to explore the application locally.
+
+Purpose
+
+This project aims to create a personalized and memorable digital wedding invitation with a seamless experience across desktop and mobile devices.
 
 ## 🚀 Live Demo
 
