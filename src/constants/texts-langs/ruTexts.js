@@ -1,6 +1,58 @@
 const ruTexts = {
   author: "Папочка Сэми",
 
+  //
+  title: "Визитка веб-сайт",
+  about: "Обо мне",
+  service: "Услуги",
+  portfolio: "Портфолио",
+  feedback: "Отзывы",
+  guarantee: "Гарантии",
+  contact: "Связаться",
+
+  modalTitle: "Контакты",
+  close: "Закрыть",
+  modalText: "Вы можете связаться со мной в Телеграм ",
+  modalInstagram: "или Инстаграм👇",
+  show: "показать",
+
+  instagram: "Инстаграм",
+  telegram: "Телеграм",
+
+  hero_title: "Веб-дизайнер ",
+  author: "Daddy Сэми",
+  hero_subtitle_part2: "продаваемый ",
+  hero_subtitle_part3: "и ",
+  hero_subtitle_part4: "уникальный дизайн ",
+  hero_subtitle_part5: "под ваши запросы",
+  hero_info: "Занимаюсь веб-дизайном на протяжении 9 лет",
+
+  Ido: "Создаю ",
+
+  service_info_part2: "статический дизайн ",
+  service_info_part3: "по следующим направлениям:",
+  banners: "Рекламные баннеры",
+  preview_youtube: "Превью для видео Ютуб",
+  design_youtube: "Оформление Ютуб каналов",
+  infographics: "Инфографика",
+  design_instagram: "Оформление для Инстаграм",
+  design_facebook: "Оформление для Фейсбука",
+  service_text_part1:
+    "Открыть для обсуждения создания дизайна и по другим направлениям. Детальней готов обсудить при ",
+  service_text_part2: "личной переписке",
+
+  portfolio_part1: "Портф",
+  portfolio_part2: "фолио",
+  portfolioa_all: "Все работы",
+  port_banners: "Баннеры",
+  port_st_instagram: "Сторис Инстаграм",
+  port_pre_youtube: "Превью Ютуб",
+  port_des_youtube: "Оформление Ютуб",
+
+  category_empty: "Работы из этой категории пока не загружены",
+  show_more: "Показать больше ⌄",
+  //
+
   husband_name: "Балиан", // Ибелин
   wife_name: "Сибилла",
   // wedding_date

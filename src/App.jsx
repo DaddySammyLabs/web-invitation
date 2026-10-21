@@ -1,6 +1,7 @@
 import { useApp } from "./context/AppContext";
 
-import texts from "./constants/texts";
+// import texts from "./constants/texts";
+import texts from "./constants/texts-langs/texts";
 
 import Header from "./components/screens/header/Header";
 import Home from "./components/pages/Home";
