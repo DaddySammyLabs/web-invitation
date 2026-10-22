@@ -3,6 +3,9 @@ html[data-theme="light"] {
   --header-background: #ffffffe1;
   --service-background: #fbfaff;
   /* --service-background: #f9f7fe; */
+  --since-title: #170196;
+  --since-numbers: #170196;
+  --since-text: #402cb1;
 
   --hero-background: #4050de;
 
@@ -28,6 +31,11 @@ html[data-theme="dark"] {
   --main-background: #04001a;
   --header-background: #04001af1;
   --service-background: #060026;
+
+  --since-title: #4824ff;
+  --since-numbers: #2910b9;
+  --since-text: #402cb1ad;
+
   --hero-background: transparent;
 
   --main-text-color: #fff;

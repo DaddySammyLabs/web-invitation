@@ -1,0 +1,65 @@
+@import "@/components/ui/theme/theme-colors.css";
+
+.container {
+  margin-top: 100px;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  /* color: #e11d48; */
+  color: var(--since-title);
+  font-size: 35px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.timeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem;
+
+  background-color: rgb(255 255 255 / 80%);
+  /* border: 1px solid #ffe4e6; */
+
+  backdrop-filter: blur(4px);
+
+  /* background-color: var(--title-color); */
+  border: 1px solid var(--elements-color);
+
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+}
+
+.value {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  /* color: #e11d48; */
+  color: var(--since-numbers);
+}
+
+.label {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  /* color: #6b7280; */
+  color: var(--since-text);
+  text-transform: capitalize;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .value {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}

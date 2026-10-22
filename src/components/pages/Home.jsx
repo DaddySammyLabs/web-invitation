@@ -3,10 +3,13 @@
 import { useApp } from "@/context/AppContext";
 import styles from "@/assets/styles/App.module.css";
 
+import { AnimatedSection } from "@components/ui/animation/motion/MotionAnimation";
+
 import ModalWindow from "@/components/ui/modal/modal-window/ModalWindow";
 
 // import Header from "@/components/screens/header/Header";
 import Hero from "@/components/screens/hero/Hero";
+import SinceWedding from "@/components/ui/since-date/SinceWedding";
 import Services from "@/components/screens/services/Services";
 import Portfolio from "@/components/screens/portfolio/Portfolio";
 import ReviewCarusel from "@/components/screens/reviews/ReviewCarusel";
@@ -18,16 +21,22 @@ function Home({ texts }) {
   return (
     <>
       <div className="container">
-        <Hero texts={texts} />
+        <AnimatedSection delay={0}>
+          <Hero texts={texts} />
+          <SinceWedding texts={texts} />
+        </AnimatedSection>
       </div>
 
-      <Services texts={texts} />
-      <Portfolio texts={texts} />
+      <AnimatedSection delay={0.15}>
+        <Services texts={texts} />
+        <Portfolio texts={texts} />
+      </AnimatedSection>
 
       <div className="container">
-        <ReviewCarusel texts={texts} />
-
-        <Guarantees texts={texts} />
+        <AnimatedSection delay={0.3}>
+          <ReviewCarusel texts={texts} />
+          <Guarantees texts={texts} />
+        </AnimatedSection>
       </div>
 
       <ModalWindow texts={texts}>
