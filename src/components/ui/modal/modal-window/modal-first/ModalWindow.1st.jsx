@@ -3,7 +3,7 @@
 
 import React, { useState, useCallback, useEffect } from "react";
 
-import useResize from "@/hooks/useResize";
+import useResize from "@/hooks/providers/useResize";
 
 import "./ModalWindow.css";
 

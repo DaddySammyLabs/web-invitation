@@ -1,0 +1,48 @@
+.header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.subtitle {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #f43f5e;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.title {
+  margin: 0;
+  color: var(--location-title);
+  font-weight: 500;
+
+  /* font-family: Georgia, "Times New Roman", serif; */
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 16px;
+}
+
+.line {
+  width: 48px;
+  height: 1px;
+  background-color: #fecdd3;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 48px;
+  }
+}

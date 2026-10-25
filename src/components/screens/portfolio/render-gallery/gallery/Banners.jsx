@@ -1,5 +1,5 @@
 import React from "react";
-import { useImages } from "@/hooks/useImages";
+import { useImages } from "@/hooks/images/useImages";
 import ImageGallery from "@/components/ui/images/image-gallery/ImageGallery";
 
 const Banners = ({ texts, gallerySrc = "portfolio/banners" }) => {

@@ -1,8 +1,8 @@
-import styles from "./Hero.module.css";
-import useResize from "@/hooks/useResize";
+import useResize from "@/hooks/providers/useResize";
 import image from "@/assets/images/Sun_moon-pana.png";
-
 import HeroMobile from "./hero-mobile/HeroMobile";
+
+import styles from "./Hero.module.css";
 
 // import Animation from "@/components/animation/AnimationHoverResponsive";
 import Animation from "@/components/ui/animation/hover-responsive/floating-image/FloatingImage";

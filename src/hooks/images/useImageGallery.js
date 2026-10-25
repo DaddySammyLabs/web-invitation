@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useEscapeKey } from "./useEscapeKey";
+import { useEscapeKey } from "../common/useEscapeKey";
 
 export function useImageGallery(
   images,

@@ -1,5 +1,3 @@
-// import useAppState from "./useAppState";
-// import { useApp } from "/context/AppContext";
 import { useApp } from "@/context/AppContext";
 import styles from "@/assets/styles/App.module.css";
 
@@ -7,13 +5,15 @@ import { AnimatedSection } from "@components/ui/animation/motion/MotionAnimation
 
 import ModalWindow from "@/components/ui/modal/modal-window/ModalWindow";
 
-// import Header from "@/components/screens/header/Header";
 import Hero from "@/components/screens/hero/Hero";
 import SinceWedding from "@/components/ui/since-date/SinceWedding";
-import Services from "@/components/screens/services/Services";
+import ScheduleWedding from "../screens/schedule/ScheduleWedding";
+
 import Portfolio from "@/components/screens/portfolio/Portfolio";
+import Location from "@/components//screens/location/Location";
+import WishesSection from "../screens/wishes-section/WishesSection";
 import ReviewCarusel from "@/components/screens/reviews/ReviewCarusel";
-import Guarantees from "@/components/screens/guarantee/Guarantees";
+import Footer from "@/components/ui/footer/Footer";
 
 function Home({ texts }) {
   const { language, isMobile } = useApp();
@@ -28,14 +28,19 @@ function Home({ texts }) {
       </div>
 
       <AnimatedSection delay={0.15}>
-        <Services texts={texts} />
+        <ScheduleWedding texts={texts} />
         <Portfolio texts={texts} />
       </AnimatedSection>
 
       <div className="container">
         <AnimatedSection delay={0.3}>
+          <Location texts={texts} />
+        </AnimatedSection>
+
+        <AnimatedSection delay={0.5}>
+          <WishesSection texts={texts} />
           <ReviewCarusel texts={texts} />
-          <Guarantees texts={texts} />
+          <Footer texts={texts} />
         </AnimatedSection>
       </div>
 

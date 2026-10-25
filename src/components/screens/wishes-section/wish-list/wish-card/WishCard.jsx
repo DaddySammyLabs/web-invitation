@@ -1,0 +1,84 @@
+import React from "react";
+
+import styles from "./WishCard.module.css";
+
+const WishCard = ({
+  texts,
+  textsWish,
+  nameAuthor,
+  attend,
+  iconVisit,
+  createdAt,
+}) => {
+  const isAttending = attend === "true";
+
+  const icon =
+    attend !== undefined
+      ? isAttending
+        ? "circle-check-big"
+        : "circle-x"
+      : iconVisit || "circle-x";
+
+  const formatDate = (date) => {
+    if (!date) return "Дата не указана";
+
+    const parsedDate = new Date(date);
+
+    if (Number.isNaN(parsedDate.getTime())) {
+      return "Дата не указана";
+    }
+
+    return parsedDate.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+  };
+
+  return (
+    <div className={styles.cardWrapper}>
+      {" "}
+      <div className={styles.cardOuter}>
+        {" "}
+        <div className={styles.card}>
+          {" "}
+          <div className={styles.header}>
+            {" "}
+            <div className={styles.avatarWrapper}>
+              {" "}
+              <div className={styles.avatar}>
+                {" "}
+                {nameAuthor?.[0]?.toUpperCase() || "?"}{" "}
+              </div>{" "}
+            </div>
+            <div className={styles.authorInfo}>
+              <div className={styles.authorRow}>
+                <h4 className={styles.authorName}>{nameAuthor}</h4>
+
+                <img
+                  className={styles.statusIcon}
+                  src={`/icons/${icon}.svg`}
+                  alt={isAttending ? "Придёт" : "Не придёт"}
+                  title={isAttending ? "Придёт" : "Не придёт"}
+                />
+              </div>
+
+              <div className={styles.dateRow}>
+                <img
+                  className={styles.clockIcon}
+                  src="/icons/clock-gray.svg"
+                  alt=""
+                />
+
+                <time className={styles.date}>{formatDate(createdAt)}</time>
+              </div>
+            </div>
+          </div>
+          <p className={styles.wishText}>{textsWish}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default WishCard;

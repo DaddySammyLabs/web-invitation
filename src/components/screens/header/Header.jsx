@@ -1,7 +1,7 @@
-import styles from "./Header.module.css";
 import { useApp } from "@/context/AppContext";
-
 import HeaderMobile from "./header-mobile/HeaderMobile";
+
+import styles from "./Header.module.css";
 
 import Icon from "@/components/ui/icons/Icon";
 import HeaderNavigation from "../../ui/navigation/Navigation";

@@ -1,4 +1,6 @@
 import { useCallback, useEffect, useRef } from "react";
+// reviews нужно переписать под универсальный хук
+// reviews -> items например
 
 const useCarousel = (reviews, visibleReviews = 3) => {
   const containerRef = useRef(null);

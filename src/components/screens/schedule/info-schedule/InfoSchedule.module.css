@@ -1,0 +1,93 @@
+.info {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.subtitle {
+  display: inline-block;
+  /* color: #f43f5e; */
+  color: var(--divs-color);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* 
+#ffc107ca
+#fffb24 */
+
+.title {
+  margin: 0;
+  /* font-family: Georgia, "Times New Roman", serif; */
+  /* color: #1f2937; */
+  color: var(--text-color);
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.clockDecoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 16px;
+  margin-bottom: 20px;
+}
+
+.clockLine {
+  width: 48px;
+  height: 1px;
+  /* background-color: #fecdd3; */
+  background-color: var(--divs-color);
+}
+
+.clockIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.texts {
+  max-width: 448px;
+  margin-inline: auto;
+}
+
+.description {
+  color: var(--text-color2);
+  line-height: 1.625;
+  margin-bottom: 17px;
+}
+
+.note {
+  color: var(--text-color3);
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.bottomDecoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 16px;
+}
+
+.bottomLine {
+  width: 32px;
+  height: 1px;
+  /* background-color: rgb(254 205 211 / 50%); */
+  background-color: var(--divs-color);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  /* background-color: #fda4af; */
+  background-color: var(--divs-color);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 48px;
+  }
+}

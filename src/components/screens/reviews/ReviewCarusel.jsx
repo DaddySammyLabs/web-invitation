@@ -6,7 +6,7 @@ import { reviews } from "./reviews.data";
 import styles from "./Reviews.module.css";
 import Review from "./Review";
 
-import useResize from "@/hooks/useResize";
+import useResize from "@/hooks/providers/useResize";
 
 const ReviewCarusel = ({ texts }) => {
   const { language = "ru" } = useApp();

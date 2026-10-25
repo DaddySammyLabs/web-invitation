@@ -12,24 +12,15 @@ const HeroMobile = ({ texts }) => {
         <Animation image={image} number="first" />
 
         <div className={styles.info}>
-          <h1>
-            {texts.hero_title}
-            <span className={styles.author}>{texts.author}</span>
+          <h1 className={styles.author}>
+            {texts.husband_name} & {texts.wife_name}
           </h1>
-          <h2>
-            {texts.Ido}
-            <span className={styles.markedText}>
-              {texts.hero_subtitle_part2}{" "}
-            </span>
-            {texts.hero_subtitle_part3}
-            <br />
-            <span className={styles.markedText}>
-              {texts.hero_subtitle_part4}
-            </span>
-            <br />
-            {texts.hero_subtitle_part5}
-          </h2>
-          <h3 onClick={openModal}>{texts.hero_info}</h3>
+          <h2>{texts.invite_text}</h2>
+          <h3 onClick={openModal}>
+            <span>{texts.wedding_date}</span>
+            <span>{texts.wedding_time2}</span>
+            <span>{texts.weddingHall}</span>
+          </h3>
         </div>
       </div>
     </>

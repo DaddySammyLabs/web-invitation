@@ -1,0 +1,254 @@
+.form {
+  padding: 24px;
+  /* background: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid #ffe4e680; */
+  background-color: var(--time-card-bg);
+  border: 1px solid var(--form-border);
+
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+
+  border-radius: 16px;
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  color: var(--label-form);
+
+  font-size: 14px;
+}
+
+.label img {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.input,
+.selectButton {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 16px;
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 12px;
+  box-sizing: border-box;
+  transition:
+    border-color 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.input {
+  color: var(--text-color4);
+  font: inherit;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #9ca3af;
+}
+
+.input:focus,
+.selectButton:focus-visible,
+.textarea:focus {
+  /* border-color: #fda4af; */
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(251, 207, 232, 0.5);
+}
+
+.attendanceField {
+  position: relative;
+}
+
+.selectButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  /* color: #374151; */
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  cursor: pointer;
+}
+
+.selectedValue {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-color3);
+}
+
+.placeholder {
+  color: #9ca3af;
+}
+
+.chevron {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #9ca3af;
+  transition: transform 200ms ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.options {
+  position: absolute;
+  z-index: 20;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 4px;
+  overflow: hidden;
+  background: var(--options-bg);
+  border: 1px solid #ffe4e6;
+  border-radius: 12px;
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-color3);
+}
+
+.option {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--options-text);
+
+  text-align: left;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+}
+
+.option:hover {
+  background: var(--option-hover);
+}
+
+.textarea {
+  width: 100%;
+  height: 128px;
+  padding: 16px;
+  color: var(--text-color4);
+  font: inherit;
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 12px;
+  box-sizing: border-box;
+  resize: none;
+  transition:
+    border-color 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.counter {
+  color: #9ca3af;
+  font-size: 12px;
+  text-align: right;
+}
+
+.error {
+  margin-top: 16px;
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  color: #6b7280;
+}
+
+.hint img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.hint span {
+  font-size: 12px;
+}
+
+.submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 24px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  background: var(--submit-bg);
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition:
+    background-color 200ms ease,
+    transform 200ms ease,
+    opacity 200ms ease;
+}
+
+.submitButton img {
+  width: 16px;
+  height: 16px;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: var(--submit-hover);
+}
+
+.submitButton:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 18px;
+  }
+
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .submitButton {
+    align-self: flex-end;
+  }
+}

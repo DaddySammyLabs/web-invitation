@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./ImageGallery.module.css";
 import { useApp } from "@/context/AppContext";
 
-import { useImageGallery } from "@/hooks/useImageGallery";
+import { useImageGallery } from "@/hooks/images/useImageGallery";
 import ImageModal from "@/components/ui/images/image-modal/ImageModal";
 import ShowMore from "@/components/ui/buttons/show-more-hide/showmore/ShowMore";
 

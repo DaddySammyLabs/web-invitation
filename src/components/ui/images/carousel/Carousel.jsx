@@ -1,8 +1,8 @@
 // src/components/pictures/carousel/Carousel.jsx
 
-import useCarousel from "@/hooks/useCarousel";
+import useCarousel from "@/hooks/images/useAutoScrollCarousel";
 
-import { useImages } from "@/hooks/useImages";
+import { useImages } from "@/hooks/images/useImages";
 import ImageModal from "@/components/ui/images/image-modal/ImageModal";
 
 import styles from "./Carousel.module.css";

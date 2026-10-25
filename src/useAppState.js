@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
-import useLanguage from "./hooks/useLanguage";
-import useTheme from "./hooks/useTheme";
+import useLanguage from "./hooks/providers/useLanguage";
+import useTheme from "./hooks/providers/useTheme";
 import useModal from "./hooks/useModal";
-import useResize from "./hooks/useResize";
-import useScroll from "./hooks/useScroll";
+import useResize from "./hooks/providers/useResize";
+import useScroll from "./hooks/providers/useScroll";
 
 const useAppState = () => {
   const { language, setLanguage } = useLanguage();
