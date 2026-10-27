@@ -50,7 +50,9 @@ const ruTexts = {
   port_des_youtube: "Оформление Ютуб",
 
   category_empty: "Работы из этой категории пока не загружены",
-  show_more: "Показать больше ⌄",
+  show_more: "Показать больше",
+  hide: "Скрыть",
+
   //
 
   husband_name: "Балиан", // Ибелин

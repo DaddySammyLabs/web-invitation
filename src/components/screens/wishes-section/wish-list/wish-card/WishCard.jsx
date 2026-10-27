@@ -1,7 +1,13 @@
 import React from "react";
+import { useApp } from "@/context/AppContext";
 
 import styles from "./WishCard.module.css";
-
+{
+  /* <img
+  src={`/icons/${theme === "light" ? "scroll" : "scroll-violet"}.svg`}
+  alt="scroll"
+/>; */
+}
 const WishCard = ({
   texts,
   textsWish,
@@ -10,6 +16,8 @@ const WishCard = ({
   iconVisit,
   createdAt,
 }) => {
+  const { theme } = useApp();
+
   const isAttending = attend === "true";
 
   const icon =

@@ -47,6 +47,24 @@
   transform: rotate(180deg);
 }
 
+.arrow {
+  width: 16px;
+  height: 16px;
+  transition: transform 300ms ease;
+  transform: rotate(0deg);
+}
+
+.arrowOpen {
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .arrow {
+    transition: none;
+  }
+}
+
 @keyframes bounce {
   0%,
   100% {

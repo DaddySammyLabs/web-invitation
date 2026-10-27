@@ -36,12 +36,14 @@ function Home({ texts }) {
         <AnimatedSection delay={0.3}>
           <Location texts={texts} />
         </AnimatedSection>
+      </div>
 
-        <AnimatedSection delay={0.5}>
-          <WishesSection texts={texts} />
-          <ReviewCarusel texts={texts} />
-          <Footer texts={texts} />
-        </AnimatedSection>
+      <AnimatedSection delay={0.5}>
+        <WishesSection texts={texts} />
+      </AnimatedSection>
+
+      <div className="container">
+        <Footer texts={texts} />
       </div>
 
       <ModalWindow texts={texts}>

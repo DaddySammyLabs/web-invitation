@@ -49,7 +49,9 @@ const enTexts = {
   port_des_youtube: "YouTube design",
 
   category_empty: "Works from this category have not been uploaded yet",
-  show_more: "Show more ⌄",
+  show_more: "Show more",
+  hide: "Hide",
+
   //
 
   husband_name: "Balian", // Ibelin

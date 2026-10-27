@@ -3,6 +3,8 @@ import useFetch from "@/hooks/api/useFetch";
 import WishesHeader from "./header/WishesHeader";
 import FormWishes from "./form/FormWishes";
 import RecentWishes from "./wish-list/RecentWishes";
+import WishesCarusel from "./wishes-carusel/WishesCarusel";
+
 import styles from "./WishesSection.module.css";
 
 const API_URL = "https://daf3a6a6494c298f.mokky.dev/wishes";
@@ -28,6 +30,14 @@ const WishesSection = ({ texts }) => {
             refetch={refetch}
           />
         </div>
+
+        <WishesCarusel
+          texts={texts}
+          wishes={wishes}
+          loading={loading}
+          error={error}
+          refetch={refetch}
+        />
       </div>
     </section>
   );

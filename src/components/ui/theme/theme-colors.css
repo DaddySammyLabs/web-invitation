@@ -43,6 +43,8 @@ html[data-theme="light"] {
   --wish-autor-bg: linear-gradient(to right, #fb7185, #f472b6);
   --wish-autor-bg: linear-gradient(to right, #4824ff, #180196a6);
 
+  --wishes-carusel-bg: #4824ff93;
+
   --title-color: #4824ff;
   /* --hero-text-color: #000; */
 
@@ -106,7 +108,9 @@ html[data-theme="dark"] {
   /* --wish-autor-bg: linear-gradient(to right, #4230a5, #61038d); */
   --wish-autor-bg: linear-gradient(to right, #61038d, #180196a6);
 
-  --title-color: #6f52fd;
+  --wishes-carusel-bg: #07002d;
+
+  --title-color: #030206;
 
   /* --switch-background: #333; */
   /* --switch-background: #120940; */
