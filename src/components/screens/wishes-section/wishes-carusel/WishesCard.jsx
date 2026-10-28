@@ -1,4 +1,5 @@
 import { useApp } from "@/context/AppContext";
+
 import styles from "./WishesCarusel.module.css";
 
 const WishesCard = ({

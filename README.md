@@ -26,9 +26,9 @@ This project aims to create a personalized and memorable digital wedding invitat
 
 ## 🚀 Live Demo
 
-**Live Demo**: [Business Card URL](https://business-card-psi-gilt.vercel.app/)
+**Live Demo**: [Web invitation URL](https://web-invitation-seven.vercel.app/)
 
-Repository: [GitHub repository URL](https://github.com/DaddySammyLabs/business-card)
+Repository: [GitHub repository URL](https://github.com/DaddySammyLabs/web-invitation)
 
 ## Основные возможности проекта
 
@@ -48,10 +48,10 @@ Repository: [GitHub repository URL](https://github.com/DaddySammyLabs/business-c
 
 ## 📸 Preview
 
-![Business Card](src/assets/images/businessCard-screenshot_desc.png)
-![Business Card](src/assets/images/businessCard-screenshot_desc2.png)
+![Business Card](src/assets/images/web_invitation_light.png)
+![Business Card](src/assets/images/web_invitation_dark.png)
 
-![Mobile Business Card](src/assets/images/businessCard-screenshot_mibile.png)
+![Mobile Business Card](src/assets/images/web_invitation_mobile.png)
 
 ## 📱 Mobile App
 
