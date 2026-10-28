@@ -12,7 +12,7 @@ function Footer({ texts }) {
       <div onClick={upButton} className={styles.footer}>
         {texts.husband_name} & {texts.wife_name}
       </div>
-      <div onClick={upButton} className={scroll < 1960 ? "" : styles.upButton}>
+      <div onClick={upButton} className={scroll < 3000 ? "" : styles.upButton}>
         <img src={"/icons/up.svg"} />
       </div>
     </>
