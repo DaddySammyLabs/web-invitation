@@ -110,7 +110,8 @@ html[data-theme="dark"] {
 
   --wishes-carusel-bg: #07002d;
 
-  --title-color: #030206;
+  /* --title-color: #030206; */
+  --title-color: #6f52fd;
 
   /* --switch-background: #333; */
   /* --switch-background: #120940; */

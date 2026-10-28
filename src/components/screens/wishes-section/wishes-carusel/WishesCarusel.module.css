@@ -167,14 +167,18 @@
 .wrapper {
   display: flex;
   place-items: center;
+  /* justify-content: space-around; */
+  column-gap: 10px;
+  /* align-items: center; */
 }
 
 .wrapper h2 {
-  font-weight: 500;
-  margin-top: 1vw;
-  margin-bottom: 0.2vw;
+  font-size: 20px;
+  font-weight: 400;
   color: #13006e;
-  width: 90%;
+  /* margin-top: 1vw; */
+  /* margin-bottom: 0.2vw; */
+  /* width: 60%; */
 }
 
 /* .reviewBlock  */

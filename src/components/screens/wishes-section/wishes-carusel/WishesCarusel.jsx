@@ -1,5 +1,5 @@
 import useInfiniteCarousel from "./useInfiniteCarousel";
-import WishesCard from "./WishesCard";
+import WishesCard from "./wish-card/CaruselCard";
 
 import styles from "./WishesCarusel.module.css";
 
